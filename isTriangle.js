@@ -4,9 +4,11 @@ const output=document.querySelector("#output")
 isTriangleBtn.addEventListener("click",isTriangle)
 
 function calculateSumOfAngles(angle1,angle2,angle3){
+    if(angle1>0 && angle2>0 && angle3>0){
     const sumOfAngles=angle1+angle2+angle3;
     return sumOfAngles
     }
+}
 function isTriangle(){
 const sumOfAngles=calculateSumOfAngles(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value))
 if(sumOfAngles===180){
