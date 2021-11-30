@@ -4,10 +4,11 @@ const output=document.querySelector("#output")
 areabtn.addEventListener("click",calculatearea)
 
 function calculateproduct(a,b,c){
+    if(a>0 && b>0 && c>0){
 const s =(a+b+c)/2
 const sum =s*(s-a)*(s-b)*(s-c)
 return sum
-
+    }
 }
 
 function calculatearea(){
