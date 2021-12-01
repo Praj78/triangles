@@ -4,7 +4,9 @@ const output=document.querySelector("#output")
 isTriangleBtn.addEventListener("click",isTriangle)
 
 function calculateSumOfAngles(angle1,angle2,angle3){
-    if(angle1>0 && angle2>0 && angle3>0){
+    if(angle1<0 || angle2<0 || angle3<0){
+    output.innerText="please enter valid input";
+    }else{
     const sumOfAngles=angle1+angle2+angle3;
     return sumOfAngles
     }
